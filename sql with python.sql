@@ -37,20 +37,20 @@ for x in mycursor:
 
   output:
 
-  +-------+------------+-----------+--------+
++-------+------------+-----------+--------+
 | id    | name       | dept_name | salary |
 +-------+------------+-----------+--------+
-| 10101 | srinivasan |comp.sci|65000 |
-| 10211 | smith      | biology   |  66000 |
-| 12121 | wu         | finance     |  65000 |
-| 15151 | mozart     | music    |  40000 |
-| 22222 | einstein   | physics  |  95000 |
+| 10101 | srinivasan |comp.sci    |65000 |
+| 10211 | smith      | biology    |  66000 |
+| 12121 | wu         | finance    |  65000 |
+| 15151 | mozart     | music      |  40000 |
+| 22222 | einstein   | physics    |  95000 |
 | 32343 | eisaid     | history    |  60000 |
 | 33456 | gold       | physics    |  87000 |
 | 58583 | califieri  | history    |  65000 |
-| 76543 | singh      | finance   |  80000 |
+| 76543 | singh      | finance    |  80000 |
 | 76766 | crick      | biology    |  72000 |
-| 83821 | brandt  | comp.sci  |  95000 |
+| 83821 | brandt     | comp.sci   |  95000 |
 | 98345 | kim        | elec.eng   |  80000 |
 +-------+------------+-----------+--------+
 
