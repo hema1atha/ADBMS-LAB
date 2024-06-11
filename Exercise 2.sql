@@ -40,17 +40,17 @@ select* from instructor;
 +-------+------------+-----------+--------+
 | id    | name       | dept_name | salary|
 +-------+------------+-----------+--------+
-| 10101 | srinivasan|comp.sci| 65000 |
+| 10101 | srinivasan|comp.sci     | 65000  |
 | 12121 | wu         | finance    |  65000 |
-| 15151 | mozart     | music   |  40000 |
-| 22222 | einstein   | physics |  95000 | 
-| 32343 | eisaid     | history   |  60000 |
-| 33456 | gold       | physics   |  87000 |
-| 58583 | califieri  | history   |  65000 |
-| 76543 | singh      | finance  |  80000 |
-| 76766 | crick      | biology   |  72000 |
-| 83821 | brandt  | comp.sci |  95000 |
-| 98345 | kim        | elec.eng  |  80000 |
+| 15151 | mozart     | music      |  40000 |
+| 22222 | einstein   | physics    |  95000 | 
+| 32343 | eisaid     | history    |  60000 |
+| 33456 | gold       | physics    |  87000 |
+| 58583 | califieri  | history    |  65000 |
+| 76543 | singh      | finance    |  80000 |
+| 76766 | crick      | biology    |  72000 |
+| 83821 | brandt     | comp.sci   |  95000 |
+| 98345 | kim        | elec.eng   |  80000 |
 +-------+------------+-----------+--------+
 
 2.
@@ -93,19 +93,19 @@ insert into teaches values(98345,'ee-181',1,'spring',2017);
 
 select * from teaches;
 
-+-------+-----------+--------+----------+------+
-| id    | course_id | sec_id | semester | year |
-+-------+-----------+--------+----------+------+
-| 10101 | cs-101    |      1 | fall         | 2017   |
-| 10101 | cs-315    |      1 | spring   | 2018   |
-| 10101 | cs-347    |      1 | fall         |2017    |
-| 12121 | fin-201   |      1 | spring   | 2018   |
-| 22222 | phy-101 |      1 | fall        | 2017    |
-| 32343 | his-351  |      1 | spring   |2018     |
++-------+-----------+--------+----------+----------+
+| id    | course_id | sec_id | semester |  year   |
++-------+-----------+--------+----------+----------+
+| 10101 | cs-101    |      1 | fall     | 2017    |
+| 10101 | cs-315    |      1 | spring   | 2018    |
+| 10101 | cs-347    |      1 | fall     |2017     |
+| 12121 | fin-201   |      1 | spring   | 2018    |
+| 22222 | phy-101   |      1 | fall     | 2017    |
+| 32343 | his-351   |      1 | spring   |2018     |
 | 45565 | cs-101    |      1 | spring   | 2018    |
 | 45565 | cs-319    |      1 | spring   | 2018    |
-| 76766 | bio-101  |      1 | summer| 2017    |
-| 76766 | bio-301  |      1 | summer| 2018    |
+| 76766 | bio-101   |      1 | summer   | 2017    |
+| 76766 | bio-301   |      1 | summer   | 2018    |
 | 83821 | cs-190    |      1 | spring   | 2017    |
 | 83821 | cs-190    |      2 | spring   | 2017    |
 | 83821 | cs-319    |      2 | spring   | 2018    |
@@ -121,18 +121,18 @@ select * from instructor;
 +-------+------------+-----------+--------+
 | id    | name       | dept_name | salary |
 +-------+------------+-----------+--------+
-| 10101 | srinivasan |comp.sci|65000 |
+| 10101 | srinivasan |comp.sci   |65000   |
 | 10211 | smith      | biology   |  66000 |
-| 12121 | wu         | finance     |  65000 |
-| 15151 | mozart     | music    |  40000 |
-| 22222 | einstein   | physics  |  95000 |
-| 32343 | eisaid     | history    |  60000 |
-| 33456 | gold       | physics    |  87000 |
-| 58583 | califieri  | history    |  65000 |
+| 12121 | wu         | finance   |  65000 |
+| 15151 | mozart     | music     |  40000 |
+| 22222 | einstein   | physics   |  95000 |
+| 32343 | eisaid     | history   |  60000 |
+| 33456 | gold       | physics   |  87000 |
+| 58583 | califieri  | history   |  65000 |
 | 76543 | singh      | finance   |  80000 |
-| 76766 | crick      | biology    |  72000 |
-| 83821 | brandt  | comp.sci  |  95000 |
-| 98345 | kim        | elec.eng   |  80000 |
+| 76766 | crick      | biology   |  72000 |
+| 83821 | brandt     | comp.sci  |  95000 |
+| 98345 | kim        | elec.eng  |  80000 |
 +-------+------------+-----------+--------+
 
 4.delete this tuple from instructor('10211','smith','biology',66000)
@@ -143,17 +143,17 @@ delete from instructor where id=10211 ;
 +-------+------------+-----------+--------+
 | id    | name       | dept_name | salary |
 +-------+------------+-----------+--------+
-| 10101 | srinivasan | comp.sci|65000 |
-| 12121 | wu         | finance       | 65000 |
-| 15151 | mozart     | music       |40000 |
-| 22222 | einstein   | physics     |95000 |
-| 32343 | eisaid     | history       |60000 |
-| 33456 | gold       | physics       |87000 |
-| 58583 | califieri  | history       |65000 |
-| 76543 | singh      | finance      |80000 |
-| 76766 | crick      | biology       |72000 |
-| 83821 | brandt     | comp.sci  |95000 |
-| 98345 | kim        | elec.eng      |80000 |
+| 10101 | srinivasan | comp.sci   |65000 |
+| 12121 | wu         | finance    |65000 |
+| 15151 | mozart     | music      |40000 |
+| 22222 | einstein   | physics    |95000 |
+| 32343 | eisaid     | history    |60000 |
+| 33456 | gold       | physics    |87000 |
+| 58583 | califieri  | history    |65000 |
+| 76543 | singh      | finance    |80000 |
+| 76766 | crick      | biology    |72000 |
+| 83821 | brandt     | comp.sci   |95000 |
+| 98345 | kim        | elec.eng   |80000 |
 +-------+------------+-----------+--------+
 
 5.select tuples from instructor  where dept_name='history' .
@@ -174,57 +174,57 @@ select *  from instructor CROSS JOIN teaches;
 +-------+------------+-----------+--------+-------+-----------+--------+----------+------+
 | id    | name       | dept_name | salary | id    | course_id | sec_id | semester | year |
 +-------+------------+-----------+--------+-------+-----------+--------+----------+------+
-| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-101    |      1 | fall           | 2017 |
-| 83821 | brandt     | comp.sci  |  95000 | 10101 | cs-101    |      1 | fall       | 2017 |
-| 76766 | crick      | biology   |  72000 | 10101 | cs-101    |      1 | fall           | 2017 |
-| 76543 | singh      | finance   |  80000 | 10101 | cs-101    |      1 | fall          | 2017 |
-| 58583 | califieri  | history   |  65000 | 10101 | cs-101    |      1 | fall           | 2017 |
-| 33456 | gold       | physics   |  87000 | 10101 | cs-101    |      1 | fall           | 2017 |
-| 32343 | eisaid     | history   |  60000 | 10101 | cs-101    |      1 | fall           | 2017 |
-| 22222 | einstein   | physics   |  95000 | 10101 | cs-101    |      1 | fall         | 2017 |
-| 15151 | mozart     | music     |  40000 | 10101 | cs-101    |      1 | fall        | 2017 |
-| 12121 | wu         | finance   |  65000 | 10101 | cs-101    |      1 | fall          | 2017 |
+| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 83821 | brandt     | comp.sci  |  95000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 76766 | crick      | biology   |  72000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 76543 | singh      | finance   |  80000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 58583 | califieri  | history   |  65000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 33456 | gold       | physics   |  87000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 32343 | eisaid     | history   |  60000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 22222 | einstein   | physics   |  95000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 15151 | mozart     | music     |  40000 | 10101 | cs-101    |      1 | fall     | 2017 |
+| 12121 | wu         | finance   |  65000 | 10101 | cs-101    |      1 | fall     | 2017 |
 | 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-101    |      1 | fall     | 2017 |
-| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-315    |      1 | spring    | 2018 |
-| 83821 | brandt     | comp.sci  |  95000 | 10101 | cs-315    |      1 | spring | 2018 |
-| 76766 | crick      | biology   |  72000 | 10101 | cs-315    |      1 | spring    | 2018 |
+| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 83821 | brandt     | comp.sci  |  95000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 76766 | crick      | biology   |  72000 | 10101 | cs-315    |      1 | spring   | 2018 |
 | 76543 | singh      | finance   |  80000 | 10101 | cs-315    |      1 | spring   | 2018 |
-| 58583 | califieri  | history   |  65000 | 10101 | cs-315    |      1 | spring    | 2018 |
+| 58583 | califieri  | history   |  65000 | 10101 | cs-315    |      1 | spring   | 2018 |
 | 33456 | gold       | physics   |  87000 | 10101 | cs-315    |      1 | spring   | 2018 |
-| 32343 | eisaid     | history   |  60000 | 10101 | cs-315    |      1 | spring    | 2018 |
-| 22222 | einstein   | physics   |  95000 | 10101 | cs-315    |      1 | spring  | 2018 |
-| 15151 | mozart     | music     |  40000 | 10101 | cs-315    |      1 | spring  | 2018 |
-| 12121 | wu         | finance   |  65000 | 10101 | cs-315    |      1 | spring    | 2018 |
-| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-315    |      1 | spring| 2018 |
-| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-347    |      1 | fall        | 2017 |
+| 32343 | eisaid     | history   |  60000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 22222 | einstein   | physics   |  95000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 15151 | mozart     | music     |  40000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 12121 | wu         | finance   |  65000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-315    |      1 | spring   | 2018 |
+| 98345 | kim        | elec.eng  |  80000 | 10101 | cs-347    |      1 | fall     | 2017 |
 | 83821 | brandt     | comp.sci  |  95000 | 10101 | cs-347    |      1 | fall     | 2017 |
-| 76766 | crick      | biology   |  72000 | 10101 | cs-347    |      1 | fall        | 2017 |
-| 76543 | singh      | finance   |  80000 | 10101 | cs-347    |      1 | fall       | 2017 |
-| 58583 | califieri  | history   |  65000 | 10101 | cs-347    |      1 | fall        | 2017 |
-| 33456 | gold       | physics   |  87000 | 10101 | cs-347    |      1 | fall        | 2017 |
-| 32343 | eisaid     | history   |  60000 | 10101 | cs-347    |      1 | fall        | 2017 |
-| 22222 | einstein   | physics   |  95000 | 10101 | cs-347    |      1 | fall      | 2017 |
+| 76766 | crick      | biology   |  72000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 76543 | singh      | finance   |  80000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 58583 | califieri  | history   |  65000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 33456 | gold       | physics   |  87000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 32343 | eisaid     | history   |  60000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 22222 | einstein   | physics   |  95000 | 10101 | cs-347    |      1 | fall     | 2017 |
 | 15151 | mozart     | music     |  40000 | 10101 | cs-347    |      1 | fall     | 2017 |
-| 12121 | wu         | finance   |  65000 | 10101 | cs-347    |      1 | fall       | 2017 |
-| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-347    |      1 | fall  | 2017 |
-| 98345 | kim        | elec.eng  |  80000 | 12121 | fin-201   |      1 | spring | 2018 |
-| 83821 | brandt     | comp.sci  |  95000 | 12121 | fin-201   |    1 | spring| 2018 |
-| 76766 | crick      | biology   |  72000 | 12121 | fin-201   |      1 | spring  | 2018 |
-| 76543 | singh      | finance   |  80000 | 12121 | fin-201   |      1 | spring  | 2018 |
+| 12121 | wu         | finance   |  65000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-347    |      1 | fall     | 2017 |
+| 98345 | kim        | elec.eng  |  80000 | 12121 | fin-201   |      1 | spring   | 2018 |
+| 83821 | brandt     | comp.sci  |  95000 | 12121 | fin-201   |    1 | spring     | 2018 |
+| 76766 | crick      | biology   |  72000 | 12121 | fin-201   |      1 | spring   | 2018 |
+| 76543 | singh      | finance   |  80000 | 12121 | fin-201   |      1 | spring   | 2018 |
 | 58583 | califieri  | history   |  65000 | 12121 | fin-201   |      1 | spring   | 2018 |
 | 33456 | gold       | physics   |  87000 | 12121 | fin-201   |      1 | spring   | 2018 |
 | 32343 | eisaid     | history   |  60000 | 12121 | fin-201   |      1 | spring   | 2018 |
-| 22222 | einstein   | physics   |  95000 | 12121 | fin-201   |      1 | spring | 2018 |
-| 15151 | mozart     | music     |  40000 | 12121 | fin-201   |      1 | spring | 2018 |
+| 22222 | einstein   | physics   |  95000 | 12121 | fin-201   |      1 | spring   | 2018 |
+| 15151 | mozart     | music     |  40000 | 12121 | fin-201   |      1 | spring   | 2018 |
 | 12121 | wu         | finance   |  65000 | 12121 | fin-201   |      1 | spring   | 2018 |
-| 10101 | srinivasan | comp.sci  |  65000 | 12121 | fin-201   | 1 | spring   | 2018 |
-| 98345 | kim        | elec.eng  |  80000 | 22222 | phy-101   |      1 | fall      | 2017 |
-| 83821 | brandt     | comp.sci  |  95000 | 22222 | phy-101   |      1 | fall   | 2017 |
-| 76766 | crick      | biology   |  72000 | 22222 | phy-101   |      1 | fall       | 2017 |
-| 76543 | singh      | finance   |  80000 | 22222 | phy-101   |      1 | fall      | 2017 |
-| 58583 | califieri  | history   |  65000 | 22222 | phy-101   |      1 | fall       | 2017 |
-| 33456 | gold       | physics   |  87000 | 22222 | phy-101   |      1 | fall       | 2017 |
-| 32343 | eisaid     | history   |  60000 | 22222 | phy-101   |      1 | fall       | 2017 |
+| 10101 | srinivasan | comp.sci  |  65000 | 12121 | fin-201   |      1 | spring   | 2018 |
+| 98345 | kim        | elec.eng  |  80000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 83821 | brandt     | comp.sci  |  95000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 76766 | crick      | biology   |  72000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 76543 | singh      | finance   |  80000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 58583 | califieri  | history   |  65000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 33456 | gold       | physics   |  87000 | 22222 | phy-101   |      1 | fall     | 2017 |
+| 32343 | eisaid     | history   |  60000 | 22222 | phy-101   |      1 | fall     | 2017 |
 | 22222 | einstein   | physics   |  95000 | 22222 | phy-101   |      1 | fall     | 2017 |
 | 15151 | mozart     | music     |  40000 | 22222 | phy-101   |      1 | fall     | 2017 |
 | 12121 | wu         | finance   |  65000 | 22222 | phy-101   |      1 | fall     | 2017 |
@@ -339,18 +339,18 @@ select *  from instructor inner join teaches on instructor.id=teaches.id;
 +-------+------------+-----------+--------+-------+-----------+--------+----------+------+
 | id    | name       | dept_name | salary | id    | course_id | sec_id | semester | year |
 +-------+------------+-----------+--------+-------+-----------+--------+----------+------+
-| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-101  |1 | fall     | 2017 |
-| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-315  |1 | spring| 2018 |
-| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-347  |1 | fall     | 2017 |
-| 12121 | wu         | finance   |  65000 | 12121 | fin-201   |   1 | spring| 2018 |
-| 22222 | einstein   | physics   |  95000 | 22222 | phy-101   |1 | fall     | 2017 |
-| 32343 | eisaid     | history   |  60000 | 32343 | his-351   |   1 | spring| 2018 |
-| 76766 | crick      | biology   |  72000 | 76766 | bio-101   |  1 | summer| 2017 |
-| 76766 | crick      | biology   |  72000 | 76766 | bio-301   |  1 | summer| 2018 |
-| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-190  | 1 | spring   | 2017 |
-| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-190  | 2 | spring   | 2017 |
-| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-319  | 2 | spring   | 2018 |
-| 98345 | kim        | elec.eng  |  80000 | 98345 | ee-181     |  1 | spring  | 2017 |
+| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-101     |1      |  fall    | 2017 |
+| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-315     |1      | spring   | 2018 |
+| 10101 | srinivasan | comp.sci  |  65000 | 10101 | cs-347     |1      | fall     | 2017 |
+| 12121 | wu         | finance   |  65000 | 12121 | fin-201    |1      | spring   | 2018 |
+| 22222 | einstein   | physics   |  95000 | 22222 | phy-101    |1      | fall     | 2017 |
+| 32343 | eisaid     | history   |  60000 | 32343 | his-351    |1      | spring   | 2018 |
+| 76766 | crick      | biology   |  72000 | 76766 | bio-101    |1      | summer   | 2017 |
+| 76766 | crick      | biology   |  72000 | 76766 | bio-301    |1      | summer   | 2018 |
+| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-190     |1      | spring   | 2017 |
+| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-190     |2      | spring   | 2017 |
+| 83821 | brandt     | comp.sci  |  95000 | 83821 | cs-319     |2      | spring   | 2018 |
+| 98345 | kim        | elec.eng  |  80000 | 98345 | ee-181     |1      | spring   | 2017 |
 +-------+------------+-----------+--------+-------+-----------+--------+----------+------+
 
 8.find the names of ll instructors whose name includes the substring 'dar'.
@@ -377,17 +377,17 @@ select * from instructor order by salary;
 +-------+------------+-----------+--------+
 | id    | name       | dept_name | salary |
 +-------+------------+-----------+--------+
-| 15151 | mozart     | music     |40000 |
-| 32343 | eisaid     | history     |60000 |
-| 10101 | srinivasan |comp.sci|65000 |
+| 15151 | mozart     | music     |  40000 |
+| 32343 | eisaid     | history   |  60000 |
+| 10101 | srinivasan |comp.sci   |  65000 |
 | 12121 | wu         | finance   |  65000 |
 | 58583 | califieri  | history   |  65000 |
 | 76766 | crick      | biology   |  72000 |
 | 76543 | singh      | finance   |  80000 |
 | 98345 | kim        | elec.eng  |  80000 |
 | 33456 | gold       | physics   |  87000 |
-| 22222 | einstein   | physics   | 95000 |
-| 83821 | brandt     | comp.sci| 95000 |
+| 22222 | einstein   | physics   | 95000  |
+| 83821 | brandt     | comp.sci  | 95000  |
 +-------+------------+-----------+--------+
 
 2.find the courses that ran in fall 2017 or spring 2018.
@@ -401,7 +401,7 @@ select distinct course_id from teaches where(semester='fall' and year=2017) or (
 | cs-315    |
 | cs-347    |
 | fin-201   |
-| phy-101 |
+| phy-101   |
 | his-351   |
 | cs-319    |
 +-----------+
@@ -417,7 +417,7 @@ select distinct course_id from teaches where(semester='fall' and year=2017) and 
 | cs-315    |
 | cs-347    |
 | fin-201   |
-| phy-101 |
+| phy-101   |
 | his-351   |
 | cs-319    |
 +-----------+
@@ -451,7 +451,7 @@ select avg(salary)from instructor where dept_name='comp.sci';
 +-------------+
 | avg(salary) |
 +-------------+
-|80000.0000 |
+|80000.0000   |
 +-------------+
 
 EXPERIMENT 3:Intermediate SQL
@@ -463,7 +463,7 @@ select count(distinct id) from teaches where semester='spring' and year=2018;
 +--------------------+
 | count(distinct id) |
 +--------------------+
-|                  5       |
+|                  5 |
 +--------------------+
 2.find the number of tuples in the teaches realation.
 
@@ -472,7 +472,7 @@ select count(*) from teaches;
 +----------+
 | count(*) |
 +----------+
-|       14    |
+|       14 |
 +----------+
 
 3.find the average salary  of instructors in each deprtment.
@@ -520,7 +520,7 @@ select name from instructor where name not in ('mozart','einstein');
 | califieri  |
 | singh      |
 | crick      |
-| brandt   |
+| brandt     |
 | kim        |
 +------------+
 
@@ -532,9 +532,9 @@ select name from instructor where salary>(select salary from  instructor where d
 | name     |
 +----------+
 | einstein |
-| gold      |
+| gold     |
 | singh    |
-| brandt |
+| brandt   |
 | kim      |
 +----------+
 
@@ -546,9 +546,9 @@ select name from instructor  where salary>(select max(salary) from instructor wh
 | name     |
 +----------+
 | einstein |
-| gold      |
+| gold     |
 | singh    |
-| brandt |
+| brandt   |
 | kim      |
 +----------+
 
@@ -581,10 +581,10 @@ select i.name,i.id from instructor i join teaches t on i.id=t.id group by i.id,i
 +------------+-------+
 | srinivasan | 10101 |
 | wu         | 12121 |
-| einstein  | 22222 |
+| einstein   | 22222 |
 | eisaid     | 32343 |
 | crick      | 76766 |
-| brandt   | 83821 |
+| brandt     | 83821 |
 | kim        | 98345 |
 +------------+-------+
 
@@ -595,18 +595,18 @@ select T.name,S.course_id from instructor as T, teaches as S WHERE T.id=S.id;
 +------------+-----------+
 | name       | course_id |
 +------------+-----------+
-| srinivasan | cs-101   |
-| srinivasan | cs-315   |
-| srinivasan | cs-347   |
-| wu             | fin-201  |
-| einstein     | phy-101|
-| eisaid        | his-351  |
-| crick         | bio-101 |
-| crick         | bio-301 |
+| srinivasan | cs-101    |
+| srinivasan | cs-315    |
+| srinivasan | cs-347    |
+| wu         | fin-201   |
+| einstein   | phy-101   |
+| eisaid     | his-351   |
+| crick      | bio-101   |
+| crick      | bio-301   |
 | brandt     | cs-190    |
 | brandt     | cs-190    |
 | brandt     | cs-319    |
-| kim          | ee-181    |
+| kim        | ee-181    |
 +------------+-----------+  
 
 4. Create a view of instructor without their salary csalled faculty
@@ -619,14 +619,14 @@ select* from faculty;
 +-------+------------+-----------+
 | 10101 | srinivasan | comp.sci  |
 | 12121 | wu         | finance   |
-| 15151 | mozart   | music  |
-| 22222 | einstein  | physics |
+| 15151 | mozart     | music     |
+| 22222 | einstein   | physics   |
 | 32343 | eisaid     | history   |
 | 33456 | gold       | physics   |
 | 58583 | califieri  | history   |
-| 76543 | singh      | finance  |
+| 76543 | singh      | finance   |
 | 76766 | crick      | biology   |
-| 83821 | brandt   | comp.sci |
+| 83821 | brandt     | comp.sci  |
 | 98345 | kim        | elec.eng  |
 +-------+------------+-----------+
 
@@ -651,13 +651,13 @@ select * from departments_total_salary;
 +-----------+--------------+
 | dept_name | total_salary |
 +-----------+--------------+
-| comp.sci  |     160000 |
-| finance   |      145000 |
+| comp.sci  |     160000   |
+| finance   |      145000  |
 | music     |        40000 |
-| physics   |      182000 |
-| history   |      125000 |
-| biology   |       72000 |
-| elec.eng  |       80000 |
+| physics   |      182000  |
+| history   |      125000  |
+| biology   |       72000  |
+| elec.eng  |       80000  |
 +-----------+--------------+
 
 3.Create a role of student.
